@@ -1,0 +1,56 @@
+body{
+
+  background-color: aqua;
+}
+
+h1{
+  justify-content: center;
+  text-align: center;
+}
+.container{
+  justify-content: center;
+  text-align: center;
+}
+
+button{
+  margin: 2%;
+  border-radius: 50px;
+  padding: 10px 15px;
+  background-color:rgb(238, 0, 0) ;
+  color: white;
+  cursor: pointer;
+  border: 0px 6rem;
+}
+
+
+.ctrl{
+margin-top: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.Task{
+  width: 600px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 0px 10px;
+  background-color: white;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action > button {
+  background-color: red;
+  color: white;
+  height: 30px;
+  width: 75px;
+  border-radius: 20px;
+}
+
