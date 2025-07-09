@@ -4,7 +4,7 @@ import Todo from "./Pages/Todo";
 import What from "./Pages/What";
 
 function App() {
-  const [inputvalue, setvalue] = useState("");
+  const [inputvalue, setvalue] = useState('');
   const [outputvalue, outvalue] = useState([]);
 
   function write(e) {
@@ -12,19 +12,19 @@ function App() {
   }
 
   function hanadletask() {
-    if (inputvalue != "") {
+    if (inputvalue != '') {
       outvalue((prevhanadletask) => [...prevhanadletask, inputvalue]);
-      setvalue("");
+      setvalue('');
     }
   }
 
-  console.log(hanadletask);
+  console.log(outputvalue);
 
   return (
     <main>
       <h1>To Do List</h1>
-      <Todo inputvalue={inputvalue} write={write} />
-      <What outputvalue={outputvalue} hanadletask={hanadletask}/>
+      <Todo inputvalue={inputvalue} write={write} hanadletask={hanadletask} />
+      <What />
     </main>
   );
 }
