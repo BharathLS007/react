@@ -3,6 +3,7 @@ import "./App.css";
 import Todo from "./Pages/Todo";
 import What from "./Pages/What";
 
+
 function App() {
   const [inputvalue, setvalue] = useState('');
   const [outputvalue, outvalue] = useState([]);
@@ -24,7 +25,8 @@ function App() {
     <main>
       <h1>To Do List</h1>
       <Todo inputvalue={inputvalue} write={write} hanadletask={hanadletask} />
-      <What />
+      <What outputvalue={outputvalue}/>
+
     </main>
   );
 }

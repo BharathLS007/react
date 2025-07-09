@@ -1,15 +1,15 @@
 import React from 'react'
-
-function What() {
+import Take from './Take'
+function What({outputvalue}) {
   return (
       <div className="ctrl">
-        <div className="Task">
-          <p>Go To School</p>
-          <div className="action">
-            <input type="checkbox" />
-            <button>Delete</button>
-          </div>
-        </div>
+           {
+            outputvalue.map((opt)=>{
+              return(
+                <Take opt={opt} />
+              )
+            })
+           }
       </div>
   )
 }
