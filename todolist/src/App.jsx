@@ -18,14 +18,21 @@ function App() {
       setvalue('');
     }
   }
-
+ 
+   function deltodo(todoindex){
+    outvalue((prevtodos)=>{
+     return prevtodos.filter((prevtodos,prevtodosindex)=>{
+         return prevtodosindex!=todoindex;
+      })
+    })
+   }
   console.log(outputvalue);
 
   return (
     <main>
       <h1>To Do List</h1>
       <Todo inputvalue={inputvalue} write={write} hanadletask={hanadletask} />
-      <What outputvalue={outputvalue}/>
+      <What outputvalue={outputvalue} deltodo={deltodo}/>
 
     </main>
   );
